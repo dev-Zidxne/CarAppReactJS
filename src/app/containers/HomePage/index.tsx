@@ -7,5 +7,5 @@ const PageContainer = styled.div`
 `;
 
 export function HomePage() {
-  return <PageContainer>Hello world op</PageContainer>;
+  return <PageContainer>Hello world </PageContainer>;
 }
