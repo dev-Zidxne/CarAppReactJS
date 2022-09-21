@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
+import styled, { css } from "styled-components/macro";
 import tw from "twin.macro";
 import MediaQuery, { useMediaQuery } from "react-responsive";
 import { slide as Menu } from "react-burger-menu";
@@ -9,8 +9,13 @@ import menuStyles from "./menuStyles";
 const ListContainer = styled.ul`
   ${tw`flex list-none `}
 `;
-const NavItem = styled.li`
+const NavItem = styled.li<{ menu?: any }>`
   ${tw`mr-1 text-xs font-medium text-black transition duration-300 ease-in-out cursor-pointer md:text-base md:mr-5 hover:text-gray-700`}
+  ${({ menu }) =>
+    menu &&
+    css`
+      ${tw`mb-3 text-xl text-white focus:text-white`}
+    `}
 `;
 
 function NavItems() {
@@ -18,18 +23,18 @@ function NavItems() {
 
   if (isMobile)
     return (
-      <Menu styles={menuStyles}>
+      <Menu right styles={menuStyles}>
         <ListContainer>
-          <NavItem>
+          <NavItem menu>
             <a href="#">Home</a>
           </NavItem>
-          <NavItem>
+          <NavItem menu>
             <a href="#">Cars</a>
           </NavItem>
-          <NavItem>
+          <NavItem menu>
             <a href="#">Services</a>
           </NavItem>
-          <NavItem>
+          <NavItem menu>
             <a href="#">Contact Us</a>
           </NavItem>
         </ListContainer>
