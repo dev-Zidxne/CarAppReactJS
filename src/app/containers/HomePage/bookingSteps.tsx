@@ -1,7 +1,9 @@
 import React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
 
-function BookingSteps() {
-  return <div>B</div>;
-}
+const Container = styled.div`
+  ${tw`flex flex-col w-full `}
+`;
 
-export default BookingSteps;
+export function BookingSteps() {}
