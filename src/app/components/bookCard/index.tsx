@@ -17,7 +17,7 @@ import { SCREENS } from "../../../responsive";
 const CardContainer = styled.div`
   min-height: 4.3em;
   box-shadow: 0 1.3px 12px -3px rgba(0, 0, 0, 0.4);
-  ${tw`flex items-center justify-center pt-1 pb-1 pl-2 pr-2 bg-white rounded-md md:pt-2 md:pb-2 md:pl-6 md:pr-6 md:pl-9 md:pr-9 `};
+  ${tw`flex items-center justify-center pt-1 pb-1 pl-2 pr-2 bg-white rounded-md md:pt-2 md:pb-2 md:pl-6 md:pr-6 md:pl-9  `};
 `;
 
 const ItemContainer = styled.div`
