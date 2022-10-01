@@ -9,6 +9,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { ICar } from "../../../typings/car";
 import { Button } from "../button";
+import Carousal, { Dots, slidesToShowPlugin } from "@brainhubeu/react-carousel";
 
 interface ICarProps extends ICar {}
 
@@ -17,7 +18,7 @@ const CarContainer = styled.div`
   min-height: 23em;
   max-height: 23em;
   box-shadow: 0 1.3px 17px -2px rgba(0, 0, 0, 0.4);
-  ${tw`flex flex-col items-center p-3 pb-4 m-1 bg-white rounded-md  sm:m-3 md:m-6`};
+  ${tw`flex flex-col items-center p-3 pb-4 m-1 bg-white rounded-md sm:m-3 md:m-6`};
 `;
 
 const CarThumbnail = styled.div`
