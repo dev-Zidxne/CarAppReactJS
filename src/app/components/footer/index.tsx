@@ -16,15 +16,15 @@ const FooterContainer = styled.div`
 `;
 
 const InnerContainer = styled.div`
-  ${tw`flex flex-wrap justify-center w-full h-full max-w-screen-2xl`}
+  ${tw`flex flex-wrap w-full h-full max-w-screen-2xl`}
 `;
 
 const BottomContainer = styled.div`
-  ${tw`flex justify-start w-full max-w-screen-2xl`}
+  ${tw`flex justify-center w-full md:justify-start max-w-screen-2xl mt-7 md:mt-1`}
 `;
 
 const CopyrightText = styled.div`
-  font-size: 11px;
+  font-size: 12px;
   ${tw`text-gray-400`}
 `;
 const AboutContainer = styled.div`
@@ -131,7 +131,8 @@ export function Footer() {
       </InnerContainer>
       <BottomContainer>
         <CopyrightText>
-          Copyright 2022 YourCar. All rights reserved.
+          Copyright &copy; {new Date().getFullYear()} YourCar. All rights
+          reserved.
         </CopyrightText>
       </BottomContainer>
     </FooterContainer>
