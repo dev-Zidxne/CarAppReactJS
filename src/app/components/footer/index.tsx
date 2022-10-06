@@ -22,9 +22,16 @@ const AboutText = styled.p`
 `;
 
 const LinksList = styled.div`
-  ${tw`list-none outline-none`}
+  ${tw`flex flex-col list-none outline-none`}
 `;
 
+const HeaderTitle = styled.ul`
+  ${tw`mb-3 text-base font-bold text-white `}
+`;
+
+const ListItem = styled.li`
+  ${tw`mb-3 text-base font-bold text-white`}
+`;
 export function Footer() {
   return (
     <FooterContainer>
